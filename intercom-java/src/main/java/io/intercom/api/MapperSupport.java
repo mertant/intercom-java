@@ -19,7 +19,9 @@ public class MapperSupport {
             return om.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, true)
                     .configure(SerializationFeature.INDENT_OUTPUT, true)
                     .configure(SerializationFeature.WRITE_DATE_TIMESTAMPS_AS_NANOSECONDS, false)
+                    .configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false)
                     .configure(DeserializationFeature.READ_DATE_TIMESTAMPS_AS_NANOSECONDS, false)
+                    .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
                     .registerModule(customAttributeModule());
         }
 
