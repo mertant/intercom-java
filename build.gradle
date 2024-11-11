@@ -9,7 +9,7 @@ subprojects {
   }
 
   ext {
-    jacksonVersion = '2.15.4'
+    jacksonVersion = '2.16.2'
     jacksonDatabindVersion = "$jacksonVersion"
     powermockVersion = '1.6.6'
   }
