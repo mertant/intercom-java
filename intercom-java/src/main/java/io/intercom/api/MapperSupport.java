@@ -20,6 +20,7 @@ public class MapperSupport {
                     .configure(SerializationFeature.INDENT_OUTPUT, true)
                     .configure(SerializationFeature.WRITE_DATE_TIMESTAMPS_AS_NANOSECONDS, false)
                     .configure(DeserializationFeature.READ_DATE_TIMESTAMPS_AS_NANOSECONDS, false)
+                    .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
                     .registerModule(customAttributeModule());
         }
 
